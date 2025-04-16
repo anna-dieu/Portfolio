@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1; /* Ensures the main content takes up available space */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
