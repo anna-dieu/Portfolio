@@ -1,10 +1,16 @@
 import "bootstrap/dist/css/bootstrap.css";
-import { Outlet } from "react-router"
-import NavBar from "./components/NavBar";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar.tsx";
+import React from "react";
 
 function App() {
-  return ("Welcome, ___."
-
+  return (
+    <div>
+      <NavBar />
+      <main>
+        <Outlet />
+      </main>
+    </div>
   );
 }
 
